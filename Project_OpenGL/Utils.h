@@ -1,4 +1,6 @@
 #pragma once
+#include "Vector3.h"
+
 class Utils
 {
 public:
@@ -8,11 +10,13 @@ public:
 		return (degree * (pi / 180));
 	}
 
-	// TODO CROSS GLM
-	static void crossProduct(int v_A[], int v_B[], int c_P[]) {
-		c_P[0] = v_A[1] * v_B[2] - v_A[2] * v_B[1];
-		c_P[1] = -(v_A[0] * v_B[2] - v_A[2] * v_B[0]);
-		c_P[2] = v_A[0] * v_B[1] - v_A[1] * v_B[0];
+	static Vector3 cross(Vector3 x, Vector3 y)
+	{
+		return Vector3(
+			x.y * y.z - y.y * x.z,
+			x.z * y.x - y.z * x.x,
+			x.x * y.y - y.x * x.y
+		);
 	}
 	
 };

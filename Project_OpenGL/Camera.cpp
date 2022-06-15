@@ -78,6 +78,6 @@ void Camera::updateCameraVectors() {
     direction.z = sin(Utils::degreeToRadian(cameraYaw)) * cos(Utils::degreeToRadian(cameraPitch));
     cameraFront = cameraFront.normalize(direction);
 
-    cameraRight = cameraRight.normalize(glm::cross(cameraFront, Vector3(0.f, 1.f, 0.f)));
-    cameraUp = cameraUp.normalize(glm::cross(cameraRight, cameraFront));
+    cameraRight = cameraRight.normalize(Utils::cross(cameraFront, Vector3(0.f, 1.f, 0.f)));
+    cameraUp = cameraUp.normalize(Utils::cross(cameraRight, cameraFront));
 }

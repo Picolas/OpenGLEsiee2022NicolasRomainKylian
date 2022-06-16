@@ -120,6 +120,7 @@ void processInput(float deltaTime) {
 	}
 
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
+		cout << "test";
 		camera.updateCameraPosition(CameraDirection::FORWARD, deltaTime);
 	}
 	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS) {
@@ -146,6 +147,8 @@ void processInput(float deltaTime) {
 	);
 
 	cameraPosition = camera.cameraPosition;
+
+	cout << "Position : x " << cameraPosition.x << ",y " << cameraPosition.y << " z, " << cameraPosition.z << " zoom" << camera.getCameraZoom() << endl;
 }
 
 void updateDeltaTime()
@@ -181,9 +184,27 @@ void mainInit() {
 
 	// tell GLFW to capture our mouse
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+
+	// OPTION
+	// depth testing
+	glEnable(GL_DEPTH_TEST); // doesn't show vertices not visible to camera (back of object)
+
+	// blending for text textures
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+	// stencil testing
+	glEnable(GL_STENCIL_TEST);
+	// keep fragments if either stencil or depth fails, replace if both pass
+	glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
+
+	// v-sync
+	glfwSwapInterval(1);
+
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); // disable cursor
 }
 
-int initGLFW()
+int initGLWF()
 {
 	// Initialise GLFW
 	if (!glfwInit())
@@ -206,7 +227,7 @@ int initWindows()
 	glfwMakeContextCurrent(window);
 }
 
-int initGLEW()
+int initGlew()
 {
 	// Initialize GLEW
 	glewExperimental = true; // Needed for core profile

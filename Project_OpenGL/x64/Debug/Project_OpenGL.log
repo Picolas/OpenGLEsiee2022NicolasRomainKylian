@@ -1,35 +1,6 @@
 ﻿  Main.cpp
 C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\Project_OpenGL\Utils.h(10,18): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
-C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\Project_OpenGL\Main.cpp(207): warning C4715: 'initWindows' : les chemins de contrôle ne retournent pas tous une valeur
-C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\Project_OpenGL\Main.cpp(219): warning C4715: 'initGLEW' : les chemins de contrôle ne retournent pas tous une valeur
-C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\Project_OpenGL\Main.cpp(195): warning C4715: 'initGLFW' : les chemins de contrôle ne retournent pas tous une valeur
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' n'a pu être trouvé avec 'glew32s.lib(glew.obj)' ou sur 'C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\x64\Debug\vc120.pdb' ; l'objet sera lié sans informations de débogage
-LINK : warning LNK4098: conflit entre la bibliothèque par défaut 'LIBCMT' et les autres bibliothèques ; utilisez /NODEFAULTLIB:library
-LINK : warning LNK4217: le symbole '__glewAttachShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::Create(void)" (?Create@GLShader@@QEAA_NXZ)'
-LINK : warning LNK4286: le symbole '__glewAttachShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewCompileShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::LoadFragmentShader(char const *)" (?LoadFragmentShader@GLShader@@QEAA_NPEBD@Z)'
-LINK : warning LNK4286: le symbole '__glewCompileShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewCreateProgram' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::Create(void)" (?Create@GLShader@@QEAA_NXZ)'
-LINK : warning LNK4217: le symbole '__glewCreateProgram' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj' dans la fonction '"protected: virtual int __cdecl std::basic_filebuf<char,struct std::char_traits<char> >::overflow(int)" (?overflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MEAAHH@Z)'
-LINK : warning LNK4217: le symbole '__glewCreateShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::LoadFragmentShader(char const *)" (?LoadFragmentShader@GLShader@@QEAA_NPEBD@Z)'
-LINK : warning LNK4286: le symbole '__glewCreateShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewDeleteProgram' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::Create(void)" (?Create@GLShader@@QEAA_NXZ)'
-LINK : warning LNK4217: le symbole '__glewDeleteShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: void __cdecl GLShader::Destroy(void)" (?Destroy@GLShader@@QEAAXXZ)'
-LINK : warning LNK4286: le symbole '__glewDeleteShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewDetachShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: void __cdecl GLShader::Destroy(void)" (?Destroy@GLShader@@QEAAXXZ)'
-LINK : warning LNK4286: le symbole '__glewDetachShader' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewGetProgramInfoLog' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::Create(void)" (?Create@GLShader@@QEAA_NXZ)'
-LINK : warning LNK4286: le symbole '__glewGetProgramInfoLog' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewGetProgramiv' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::Create(void)" (?Create@GLShader@@QEAA_NXZ)'
-LINK : warning LNK4286: le symbole '__glewGetProgramiv' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewGetShaderInfoLog' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"bool __cdecl ValidateShader(unsigned int)" (?ValidateShader@@YA_NI@Z)'
-LINK : warning LNK4286: le symbole '__glewGetShaderInfoLog' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewGetShaderiv' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"bool __cdecl ValidateShader(unsigned int)" (?ValidateShader@@YA_NI@Z)'
-LINK : warning LNK4286: le symbole '__glewGetShaderiv' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewLinkProgram' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::Create(void)" (?Create@GLShader@@QEAA_NXZ)'
-LINK : warning LNK4286: le symbole '__glewLinkProgram' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-LINK : warning LNK4217: le symbole '__glewShaderSource' défini dans 'glew32s.lib(glew.obj)' est importé par 'GLShader.obj' dans la fonction '"public: bool __cdecl GLShader::LoadFragmentShader(char const *)" (?LoadFragmentShader@GLShader@@QEAA_NPEBD@Z)'
-LINK : warning LNK4286: le symbole '__glewShaderSource' défini dans 'glew32s.lib(glew.obj)' est importé par 'shader.obj'
-Main.obj : error LNK2019: symbole externe non résolu "int __cdecl initGLWF(void)" (?initGLWF@@YAHXZ) référencé dans la fonction "void __cdecl mainInit(void)" (?mainInit@@YAXXZ)
-Main.obj : error LNK2019: symbole externe non résolu "int __cdecl initGlew(void)" (?initGlew@@YAHXZ) référencé dans la fonction "void __cdecl mainInit(void)" (?mainInit@@YAXXZ)
-C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\x64\Debug\Project_OpenGL.exe : fatal error LNK1120: 2 externes non résolus
+C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\Project_OpenGL\Main.cpp(240): warning C4715: 'initGlew' : les chemins de contrôle ne retournent pas tous une valeur
+C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\Project_OpenGL\Main.cpp(228): warning C4715: 'initWindows' : les chemins de contrôle ne retournent pas tous une valeur
+C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\Project_OpenGL\Main.cpp(216): warning C4715: 'initGLWF' : les chemins de contrôle ne retournent pas tous une valeur
+  Project_OpenGL.vcxproj -> C:\Users\Picolas\Documents\OpenGL Romain Nico Kylian\OpenGLEsiee2022NicolasRomainKylian\x64\Debug\Project_OpenGL.exe

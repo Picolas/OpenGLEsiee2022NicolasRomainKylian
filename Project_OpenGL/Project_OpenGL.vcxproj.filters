@@ -19,6 +19,9 @@
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Utils.cpp" />
     <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="Vector2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="ColorFragmentShader.fs">
@@ -52,5 +55,10 @@
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Mouse.h" />
+    <ClInclude Include="tinyObjLoader.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="Vector2.h">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
